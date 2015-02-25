@@ -2,9 +2,9 @@
 
 [![npm version](https://badge.fury.io/js/fluxible-plugin-dynamic-routr.svg)](http://badge.fury.io/js/fluxible-plugin-dynamic-routr)
 [![Build Status](https://travis-ci.org/localnerve/fluxible-plugin-dynamic-routr.svg?branch=master)](https://travis-ci.org/localnerve/fluxible-plugin-dynamic-routr)
-[![Dependency Status](https://david-dm.org/localnerve/fluxible-plugin-dynamic-routr.svg)](https://david-dm.org/yahoo/fluxible-plugin-dynamic-routr)
-[![devDependency Status](https://david-dm.org/localnerve/fluxible-plugin-dynamic-routr/dev-status.svg)](https://david-dm.org/yahoo/fluxible-plugin-dynamic-routr#info=devDependencies)
-[![Coverage Status](https://coveralls.io/repos/localnerve/fluxible-plugin-dynamic-routr/badge.png?branch=master)](https://coveralls.io/r/yahoo/fluxible-plugin-dynamic-routr?branch=master)
+[![Dependency Status](https://david-dm.org/localnerve/fluxible-plugin-dynamic-routr.svg)](https://david-dm.org/localnerve/fluxible-plugin-dynamic-routr)
+[![devDependency Status](https://david-dm.org/localnerve/fluxible-plugin-dynamic-routr/dev-status.svg)](https://david-dm.org/localnerve/fluxible-plugin-dynamic-routr#info=devDependencies)
+[![Coverage Status](https://coveralls.io/repos/localnerve/fluxible-plugin-dynamic-routr/badge.png?branch=master)](https://coveralls.io/r/localnerve/fluxible-plugin-dynamic-routr?branch=master)
 
 Provides dynamic routing methods to your [Fluxible](https://github.com/yahoo/fluxible) application using [routr](https://github.com/yahoo/routr).
 
