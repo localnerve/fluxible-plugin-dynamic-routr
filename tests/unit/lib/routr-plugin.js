@@ -7,7 +7,7 @@
 
 var expect = require('chai').expect;
 var routrPlugin = require('../../../lib/routr-plugin');
-var createStore = require('fluxible/utils/createStore');
+var createStore = require('fluxible/addons/createStore');
 var Fluxible = require('fluxible');
 
 var RoutesStore = createStore({
@@ -26,7 +26,7 @@ var RoutesStore = createStore({
 
 describe('DynRoutrPlugin', function() {
     var app,
-        pluginInstance,        
+        pluginInstance,
         pluginName,
         context,
         routes1 = {
@@ -53,7 +53,7 @@ describe('DynRoutrPlugin', function() {
         },
         passThru = function(routes) {
             return routes;
-        },        
+        },
         dehydrateRoutes = function(routes) {
             routes.test = 'test';
             return routes;
@@ -71,14 +71,14 @@ describe('DynRoutrPlugin', function() {
     function actionContextRoutes(actionContext) {
         expect(actionContext.router).to.be.an('object');
         expect(actionContext.router.makePath).to.be.a('function');
-        expect(actionContext.router.getRoute).to.be.a('function');        
+        expect(actionContext.router.getRoute).to.be.a('function');
     }
     function actionContextRoutes1(actionContext) {
         expect(actionContext.router.makePath('view_user', {id: 1})).to.equal('/user/1');
     }
     function actionContextRoutes2(actionContext) {
         expect(actionContext.router.makePath('view_second', {id: 2})).to.equal('/second/2');
-    }    
+    }
     function componentContextRoutes1(componentContext) {
         expect(componentContext.makePath).to.be.a('function');
         expect(componentContext.makePath('view_user', {id: 1})).to.equal('/user/1');
@@ -175,7 +175,7 @@ describe('DynRoutrPlugin', function() {
                 actionContext.dispatch('RECEIVE_ROUTES', routes1);
                 dehydratedState = context.dehydrate().plugins[pluginName];
                 expect(dehydratedState.routes.test).to.equal('test');
-            });            
+            });
             it('should use rehydrateRoutes if defined', function() {
                 var plugins = {};
                 plugins[pluginName] = dehydratedState;
@@ -196,7 +196,7 @@ describe('DynRoutrPlugin', function() {
             actionContext.dispatch('RECEIVE_ROUTES', routes1);
             expect(pluginInstance.getRoutes()).to.eql(routes1);
         });
-        it('should update with routes2 when store updates', function() {                
+        it('should update with routes2 when store updates', function() {
             actionContext.dispatch('RECEIVE_ROUTES', routes2);
             expect(pluginInstance.getRoutes()).to.eql(routes2);
         });
