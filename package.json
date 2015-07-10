@@ -1,6 +1,6 @@
 {
   "name": "fluxible-plugin-dynamic-routr",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A deprecated plugin for Fluxible applications to provide dynamic routing methods",
   "main": "index.js",
   "repository": {
