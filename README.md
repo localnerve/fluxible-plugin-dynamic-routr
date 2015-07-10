@@ -8,7 +8,8 @@
 
 ## Deprecated
 This package has been deprecated in favor of [fluxible-router](https://github.com/yahoo/fluxible-router). It's a major change, but fluxible-router comes with a great RouteStore and supportive components that get even more routing code out of your project. You also get to leave mixins behind, which aligns you with future React.
-For help:
+
+For help:  
 1. Here is the main [diff](https://github.com/localnerve/flux-react-example/commit/851bad848cd21c8ebecefa098d6b42e42f86ea3c) of my conversion to fluxible-router.
 2. If you have dynamic routing actions that transform to/from functions, this still works great in fluxible-router, but you have to handle re/dehydration yourself. I chose extending the fluxible-router RouteStore as the least impactful change that also aligns with Yahoo. Here my RouteStore [extension](https://github.com/localnerve/flux-react-example/blob/9e6d56f4ab0af2791d76d6e7cb4f84a6ae03b2e0/stores/RouteStore.js), which follows the pattern Yahoo uses for [static routes](https://github.com/yahoo/fluxible-router/blob/4b6f086cf964f28aee5f658bcb60f14b8a2c90e0/lib/RouteStore.js#L134).
 3. Here is the yahoo guide on [upgrading](https://github.com/yahoo/fluxible-router/blob/master/UPGRADE.md) to fluxible-router.
