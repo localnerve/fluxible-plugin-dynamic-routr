@@ -1,5 +1,7 @@
 # A Dynamic Routr Plugin for Fluxible
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/localnerve/fluxible-plugin-dynamic-routr.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/fluxible-plugin-dynamic-routr.svg)](http://badge.fury.io/js/fluxible-plugin-dynamic-routr)
 [![Build Status](https://travis-ci.org/localnerve/fluxible-plugin-dynamic-routr.svg?branch=master)](https://travis-ci.org/localnerve/fluxible-plugin-dynamic-routr)
 [![Dependency Status](https://david-dm.org/localnerve/fluxible-plugin-dynamic-routr.svg)](https://david-dm.org/localnerve/fluxible-plugin-dynamic-routr)
